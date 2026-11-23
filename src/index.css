@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes flowDash {
+  to {
+    stroke-dashoffset: -24;
+  }
+}
+
+.pipe-flow {
+  stroke-dasharray: 6 6;
+  animation: flowDash 0.8s linear infinite;
+}
+
+.pipe-flow-fast {
+  stroke-dasharray: 8 4;
+  animation: flowDash 0.35s linear infinite;
+}
+
+/* Custom scrollbar for DCS panels */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
